@@ -230,7 +230,7 @@ if (!function_exists('jigoshop_template_single_price')) {
 
 if (!function_exists('jigoshop_template_single_excerpt')) {
 	function jigoshop_template_single_excerpt( $post, $_product ) {
-		if ($post->post_excerpt) echo '<div class="js-product-excerpt">' . wpautop(wptexturize($post->post_excerpt)) . '</div>';
+		if ($post->post_excerpt) echo wpautop(wptexturize($post->post_excerpt));
 	}
 }
 
